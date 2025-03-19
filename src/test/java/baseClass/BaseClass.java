@@ -1,6 +1,5 @@
 package baseClass;
 
-import com.sun.activation.registries.MailcapParseException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +14,7 @@ public class BaseClass {
 
     @BeforeMethod()
     @Parameters({"url"})
-    public void initialize(String url) throws InterruptedException, MailcapParseException {
+    public void initialize(String url) throws InterruptedException {
         WebDriverManager.chromedriver().clearDriverCache().setup();
         WebDriverManager.chromedriver().clearResolutionCache().setup();
         WebDriverManager.chromedriver().setup();
