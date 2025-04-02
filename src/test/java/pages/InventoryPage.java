@@ -11,82 +11,82 @@ public class InventoryPage extends BasePage {
     // selectors---------------------------------------//
 
     // -----image--------
-    @FindBy(xpath = "//*[@id=\"item_4_img_link\"]/img")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[1]/div[1]/a/img")
     public WebElement imagenBackpack;
 
-    @FindBy(xpath = "//*[@id=\"item_0_img_link\"]/img")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[2]/div[1]/a/img")
     public WebElement imagenBikelight;
 
-    @FindBy(xpath = "//*[@id=\"item_1_img_link\"]/img")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[3]/div[1]/a/img")
     public WebElement imagenBoltshirt;
 
-    @FindBy(xpath = "//*[@id=\"item_5_img_link\"]/img")
+    @FindBy(xpath = "//html/body/div/div/div/div[2]/div/div/div/div[4]/div[1]/a/img")
     public WebElement imagenFleecejacket;
 
-    @FindBy(xpath = "//*[@id=\"item_2_img_link\"]/img")
+    @FindBy(xpath = "//html/body/div/div/div/div[2]/div/div/div/div[5]/div[1]/a/img")
     public WebElement imagenLabsonesie;
 
-    @FindBy(xpath = "//*[@id=\"item_3_img_link\"]/img")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[6]/div[1]/a/img")
     public WebElement imagenAllthethings;
 
     // -----title --------
 
-    @FindBy(xpath = "//*[@id=\"item_4_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/a/div")
     public WebElement titleBackpack;
 
-    @FindBy(xpath = "//*[@id=\"item_0_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/a/div")
     public WebElement titleBikelight;
 
-    @FindBy(xpath = "//*[@id=\"item_1_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/a/div")
     public WebElement titleBoltshirt;
 
-    @FindBy(xpath = "//*[@id=\"item_5_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/a/div")
     public WebElement titleFleecejacket;
 
-    @FindBy(xpath = "//*[@id=\"item_2_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/a/div")
     public WebElement titleLabsonesie;
 
-    @FindBy(xpath = "//*[@id=\"item_3_title_link\"]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/a/div")
     public WebElement titleAllthethings;
 
     // -----item desc--------
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/div")
     public WebElement descBackpack;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[2]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[1]/div")
     public WebElement descBikelight;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[3]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[1]/div")
     public WebElement descBoltshirt;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[4]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[1]/div")
     public WebElement descFleecejacket;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[5]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[1]/div")
     public WebElement descLabsonesie;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[6]/div[2]/div[1]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[1]/div")
     public WebElement descAllthethings;
 
     // -----item price--------
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[1]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[2]/div")
     public WebElement priceBackpack;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[2]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[2]/div[2]/div[2]/div")
     public WebElement priceBikelight;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[3]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[3]/div[2]/div[2]/div")
     public WebElement priceBoltshirt;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[4]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[4]/div[2]/div[2]/div")
     public WebElement priceFleecejacket;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[5]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[5]/div[2]/div[2]/div")
     public WebElement priceLabsonesie;
 
-    @FindBy(xpath = "//*[@id=\"inventory_container\"]/div/div[6]/div[2]/div[2]/div")
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/div/div/div[6]/div[2]/div[2]/div")
     public WebElement priceAllthethings;
 
     // -----Button add--------
