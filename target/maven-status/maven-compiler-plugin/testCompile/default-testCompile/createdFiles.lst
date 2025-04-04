@@ -1,0 +1,7 @@
+pages/InventoryPage.class
+pages/HomePage.class
+pages/BasePage.class
+pages/shoppingcart.class
+baseClass/BaseClass.class
+pages/LoginPage.class
+testScript/LoginTest.class
