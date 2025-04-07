@@ -108,6 +108,9 @@ public class InventoryPage extends BasePage {
     @FindBy(id = "add-to-cart-test.allthethings()-t-shirt-(red)")
     public WebElement addToCartAllthethingsButton;
 
+    @FindBy(xpath = "/html/body/div[1]/div/div/div[1]/div[1]/div[3]/a")
+    private WebElement shoppingcartlink;
+
     // -----Button remove--------
     @FindBy(id = "remove-sauce-labs-backpack")
     public WebElement removeToCartBackpackButton;
@@ -299,6 +302,8 @@ public class InventoryPage extends BasePage {
         removeToCartAllthethingsButton.click();
     }
 
-
+    public void clickshoppingcartlink() {
+        shoppingcartlink.click();
+    }
 
 }
