@@ -3,7 +3,8 @@
     <test name="Device-1">
         <parameter name="url" value="https://www.saucedemo.com/"/>
         <classes>
-            <class name="testScript.LoginTest"/>
+            <!--<class name="testScript.LoginTest"/>-->
+            <class name="testScript.ShoppingCartTest"/>
         </classes>
     </test>
 </suite>

@@ -60,7 +60,7 @@ public class shoppingcart extends BasePage {
     // -------------------------------------------Buttons----------------------------------------//
 
     @FindBy(xpath = "/html/body/div[1]/div/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/button")
-    private WebElement buttonremove1;
+    private static WebElement buttonremove1;
 
     @FindBy(xpath = "/html/body/div[1]/div/div/div[2]/div/div[1]/div[4]/div[2]/div[2]/button")
     private WebElement buttonremove2;
@@ -151,7 +151,7 @@ public class shoppingcart extends BasePage {
 
     // -------------------------------------------Buttons----------------------------------------//
 
-    public void clickbuttonremove1() {
+    public static void clickbuttonremove1() {
         buttonremove1.click();
     }
 
