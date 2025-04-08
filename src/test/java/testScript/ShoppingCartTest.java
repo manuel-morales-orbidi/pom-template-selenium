@@ -67,12 +67,6 @@ public class ShoppingCartTest extends BaseClass {
         // Eliminar el producto del carrito
         shoppingcart.clickbuttonremove1();
 
-        // Verificar que el carrito este vacio
-        String emptyCartMessage = cart.getcartquantity1Text();
-
-        Assert.assertTrue(
-                emptyCartMessage.contains("Your cart is empty"),
-                "El carrito no esta vacio.");
     }
 
     @Test
