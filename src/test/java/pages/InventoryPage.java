@@ -111,6 +111,11 @@ public class InventoryPage extends BasePage {
     @FindBy(xpath = "/html/body/div[1]/div/div/div[1]/div[1]/div[3]/a")
     private WebElement shoppingcartlink;
 
+    @FindBy(xpath = "/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")
+    private WebElement cartBadge;
+
+
+
     // -----Button remove--------
     @FindBy(id = "remove-sauce-labs-backpack")
     public WebElement removeToCartBackpackButton;
@@ -283,7 +288,7 @@ public class InventoryPage extends BasePage {
     }
 
     public void clickRemoveToCartBikelightButton() {
-        addToCartBikelightButton.click();
+        removeToCartBikelightButton.click();
     }
 
     public void clickRemoveToCartBoltshirtButton() {
@@ -304,6 +309,11 @@ public class InventoryPage extends BasePage {
 
     public void clickshoppingcartlink() {
         shoppingcartlink.click();
+    }
+
+    public WebElement getCartBadge() {
+        cartBadge.getText();
+        return cartBadge;
     }
 
 }
