@@ -1,5 +1,6 @@
 package testScript;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -146,6 +147,79 @@ public class ShoppingCartTest extends BaseClass {
         // Verificar que se regresó correctamente a la tienda
         Assert.assertTrue(inventoryPage.getTitleBackpack().isDisplayed(), "No regresó a la página de inventario");
         driver.navigate().refresh();
+
+    }
+
+    @Test
+    public void verifyCartBadge() throws Exception {
+
+        // Instanciar las clases
+        LoginPage loginPage = new LoginPage(driver);
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        shoppingcart cart = new shoppingcart(driver);
+
+        // Iniciar sesion
+        loginPage.setUserName("standard_user");
+        Thread.sleep(2000);
+        loginPage.setPassword("secret_sauce");
+        Thread.sleep(2000);
+        loginPage.clickLoginButton();
+        Thread.sleep(2000);
+
+        // Agregar al carrito
+        inventoryPage.clickAddToCartBikelightButton();
+
+        // Verificar que el badge del carro aparezca en la pagina
+        WebElement badge = inventoryPage.getCartBadge();
+
+        // Obtener el numero de elementos del badge
+        String productNumber = badge.getText();
+
+        // Verificar que numero de elementos que aparece en el bdge del carro este actualizado
+
+        Assert.assertEquals(productNumber, "1");
+
+    }
+
+    @Test
+    public void verifyBadgeAfterRemoveItem() throws Exception {
+
+        // Instanciar las clases
+        LoginPage loginPage = new LoginPage(driver);
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        shoppingcart cart = new shoppingcart(driver);
+
+        // Iniciar sesion
+        loginPage.setUserName("standard_user");
+        Thread.sleep(2000);
+        loginPage.setPassword("secret_sauce");
+        Thread.sleep(2000);
+        loginPage.clickLoginButton();
+        Thread.sleep(2000);
+
+        // Agregar elemento al carrito
+        inventoryPage.clickAddToCartBikelightButton();
+
+        // Agregar elemento al carrito
+        inventoryPage.clickAddToCartBoltshirtButton();
+
+        // Agregar elemento al carrito
+        inventoryPage.clickAddToCartBackpackButton();
+
+        // Verificar que el badge del carro aparezca en la pagina
+        WebElement badge = inventoryPage.getCartBadge();
+
+        // Remover  elemento del carrito
+        inventoryPage.clickRemoveToCartBikelightButton();
+
+        // Obtener el numero de elementos del badge
+        String productNumber = badge.getText();
+
+        // Verificar que numero de elementos que aparece en el bdge del carro este actualizado
+
+        Assert.assertEquals(productNumber, "2");
+
+
 
     }
 }
